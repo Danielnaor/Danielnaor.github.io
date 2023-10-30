@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram OAuth Callback</title>
+</head>
+
+<body>
+    <h1>Instagram OAuth Callback Handling</h1>
+
+    <script>
+        // Parse the URL to get query parameters
+        const queryParams = new URLSearchParams(window.location.search);
+
+        // Get the access token from the query parameters
+        const accessToken = queryParams.get('access_token');
+
+        // Handle the access token as needed, for example, send it to your server for further processing
+        console.log('Instagram Access Token:', accessToken);
+    </script>
+</body>
+
+</html>
